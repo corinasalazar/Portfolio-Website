@@ -1,1 +1,129 @@
-/* */
+/* Requirements for assignments 
+The following CSS properties:
+ x background, 
+ x color, 
+ x font-family, 
+ x font-size,
+ x height, 
+ x margin, 
+ x padding, 
+ x text-align
+Styled links using pseudo-classes
+
+*/
+
+/* global */
+
+body{
+    box-sizing: border-box; 
+    font-family: 'Courier Prime', monospace;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+    color: #555B82;
+    background-color: #DFE1F0;
+}
+
+
+/* containers */
+
+.hero-section, #about-me, #contact{
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.nav-container{
+    max-width: 1200px;
+    margin: 20px auto;
+    height: 100px;
+}
+
+hr{
+    max-width: 800px;
+}
+
+#about-me{
+    padding-bottom: 240px;
+}
+
+#contact{
+    padding-bottom: 40px;
+}
+
+
+/* text styling */
+
+a {
+    color: #555B82;
+}
+
+a:hover{
+    font-weight: 700;
+}
+
+a:visited{
+    color: #745582;
+}
+
+a:active{
+    color: #404355;
+}
+
+
+
+/* header bar */
+
+.logo{
+    font-size: 1.5em;
+    float: left;
+    margin-top: 11px;
+}
+
+nav{
+    float: right;
+}
+
+nav ol li{
+    float: left;
+    margin-left: 60px;
+}
+
+
+/* horizontal rules */
+
+hr {
+    height: 11px;
+    background-image: url(../images/divider.png);
+    border: 0;
+}
+
+
+/* about section */
+
+.left-about{
+    width: 15%;
+    float: left;
+}
+
+.right-about{
+    width: 80%;
+    float: left;
+    margin-left: 5%;
+}
+
+img{
+    margin-top: 20px;
+}
+
+
+/* footer */
+
+ul li{
+    float: left;
+    margin-right: 60px;
+}
+
+ul{
+    list-style-position: inside;
+    padding-left: 0;
+}

@@ -10,35 +10,7 @@ body{
     background-color: #DFE1F0;
 }
 
-
-/* containers */
-
-.hero-section, #about-me, #contact{
-    max-width: 800px;
-    margin: 100px auto;
-}
-
-.nav-container{
-    max-width: 1200px;
-    margin: 20px auto;
-    height: 100px;
-}
-
-hr{
-    max-width: 800px;
-}
-
-#about-me{
-    padding-bottom: 480px;
-}
-
-#contact{
-    padding-bottom: 40px;
-}
-
-
 /* text styling */
-
 a {
     color: #555B82;
 }
@@ -59,23 +31,48 @@ p{
     line-height: 1.4em;
 }
 
+ul{
+    list-style-position: inside;
+    padding-left: 0;
+}
 
 
-/* header bar */
+/* containers */
+#intro, #about-me, #contact, #projects{
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
 
+.project img{
+    width: 100%;
+}
+
+
+/*--------- Mobile ----------*/
+
+/* mobile header */
 .logo{
     font-size: 1.5em;
-    float: left;
     margin-top: 11px;
 }
 
-nav{
-    float: right;
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ol{
+    display: flex;
+    flex-direction: column;
 }
 
 nav ol li{
-    float: left;
-    margin-left: 60px;
+    margin: 10px 0;
+}
+
+.hero-section{
+    margin: 50px 20px;
 }
 
 
@@ -85,11 +82,76 @@ hr {
     height: 11px;
     background-image: url(../images/divider.png);
     border: 0;
+    width: 90%;
+    max-width: 800px;
 }
 
 
-/* about section */
+/* lists */
 
+ul li{
+    margin: 20px 0;
+}
+
+/* projects */
+.project{
+    margin: 20px 0;
+}
+
+
+
+
+/*--------- Desktop ---------*/
+
+@media all and (min-width: 800px) {
+    .flex-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ol{ 
+        flex-direction: row;
+    }
+
+    nav ol li{
+        margin: 0 0 0 70px;
+    }
+
+    .hero-section{
+        margin: 100px 20px;
+    }
+
+    /* about me */
+    .right-about{
+        margin-left: 20px;
+    }
+
+    /* Projects */
+
+    .project{
+        margin: 0 20px;
+    }
+/*
+
+
+
+#about-me{
+    padding-bottom: 480px;
+}
+
+#contact{
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+/* about section */
+/*
 .left-about{
     width: 15%;
     float: left;
@@ -106,14 +168,3 @@ img{
 }
 
 
-/* footer */
-
-ul li{
-    float: left;
-    margin-right: 60px;
-}
-
-ul{
-    list-style-position: inside;
-    padding-left: 0;
-}

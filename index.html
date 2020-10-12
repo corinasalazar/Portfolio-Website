@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Corina Salazar, Software Developer</title>
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -10,76 +10,100 @@
     </head>
     <body>
 
-        <!-- Introduction-->
-        <header id="intro">
-            <div class="nav-container">
-                <div class="logo">
-                    <em>corina salazar</em>
-                </div>
-                <nav>
-                    <ol>
-                        <li><a href="#intro">Intro</a></li>
-                        <li><a href="#about-me">About Me</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ol>
-                </nav>
-            </div> 
-            <div class="hero-section">
-                <h1>Corina Salazar is a software developer based in Boston, MA.</h1>
-                <a href="mailto:corina@hey.com">corina@hey.com</a>
-            </div>           
-        </header>
-        <hr>
+    <!-- Introduction-->
+    <header id="intro">
+        <div class="flex-container">
+            <div class="logo">
+                <em>corina salazar</em>
+            </div>
+            <nav>
+                <ol>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+            </nav>
+        </div> 
+        <div class="hero-section">
+            <h1>Corina Salazar is a software developer based in Boston, MA.</h1>
+            <a href="mailto:corina@hey.com">corina@hey.com</a>
+        </div>           
+    </header>
+
+    <hr>
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="flex-container">
+            <div class="project">
+                <img src="images/project-img.jpg" />
+                <h3>Project Name</h3>
+                <p>Project description is going to go here! Lorem ipsum dolor 
+                    sit amet</p>
+            </div>
+            <div class="project">
+                <img src="images/project-img.jpg" />
+                <h3>Project Name</h3>
+                <p>Project description is going to go here! Lorem ipsum dolor 
+                    sit amet</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
         
-        <!-- About Me -->
-        <main id="about-me">
-            <h2>About Me</h2>
-                <div class="left-about">
-                    <img src="images/portfolio-headshot.png" alt="Corina Salazar" width="100" />
-                </div>
-                <div class="right-about">
-                    <article>
-                        <h3>Web Development</h3>
-                        <p>
-                            Hey there! My name is Corina and for the past 4 years have been 
-                            working as a UX/UI Designer. I’m now looking to broaden my 
-                            skillset and am working to do so within Thinkful’s Software 
-                            Engineering bootcamp.
-                        </p>
-                        <p>
-                            I first discovered the realm of development at the age of 12, 
-                            when I created and sold graphics and coded up - wait for it- 
-                            <em>Neopets profile pages</em> for myself and my friends. Element 
-                            styling was, horrifyingly, done inline at the time. However, the 
-                            spark was lit- and I’ve been taking every opportunity to work with 
-                            code ever since. 
-                        </p>
-                        <p>
-                            I’m most excited about working in teams to solve large-scale business 
-                            problems. I'll be learning the following technologies: HTML, CSS, 
-                            Javascript, jQuery, NodeJS, Express, and React. 
-                        </p>
-                    </article>
-                    <article>
-                        <h3>Personal</h3>
-                        <p>
-                            When not working, I enjoy watercolor painting, Korean dramas, 
-                            quesadillas, hiking, kayaking, and building Ikea furniture.  
-                        </p>
-                    </article>
-                </div>
+
+    <!-- About Me -->
+    <main id="about-me">
+        <h2>About Me</h2>
+        <div class="flex-container">
+            <div class="left-about">
+                <img src="images/portfolio-headshot.png" alt="Corina Salazar" width="100" />
+            </div>
+            <div class="right-about">
+                <article>
+                    <h3>Web Development</h3>
+                    <p>
+                        Hey there! My name is Corina and for the past 4 years have been 
+                        working as a UX/UI Designer. I’m now looking to broaden my 
+                        skillset and am working to do so within Thinkful’s Software 
+                        Engineering bootcamp.
+                    </p>
+                    <p>
+                        I first discovered the realm of development at the age of 12, 
+                        when I created and sold graphics and coded up - wait for it- 
+                        <em>Neopets profile pages</em> for myself and my friends. Element 
+                        styling was, horrifyingly, done inline at the time. However, the 
+                        spark was lit- and I’ve been taking every opportunity to work with 
+                        code ever since. 
+                    </p>
+                    <p>
+                        I’m most excited about working in teams to solve large-scale business 
+                        problems. I'll be learning the following technologies: HTML, CSS, 
+                        Javascript, jQuery, NodeJS, Express, and React. 
+                    </p>
+                </article>
+                <article>
+                    <h3>Personal</h3>
+                    <p>
+                        When not working, I enjoy watercolor painting, Korean dramas, 
+                        quesadillas, hiking, kayaking, and building Ikea furniture.  
+                    </p>
+                </article>
+            </div>
+        </div>
         </main>
         <hr>
         
         <!-- Contact -->
-        <footer id="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/corinasalazar/">LinkedIn</a></li>
-                <li><a href="https://github.com/corinasalazar">GitHub</a></li>
-                <li><a href="mailto:corina@hey.com">corina@hey.com</a></li>
-            </ul>
-        </footer>
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/corinasalazar/">LinkedIn</a></li>
+            <li><a href="https://github.com/corinasalazar">GitHub</a></li>
+            <li><a href="mailto:corina@hey.com">corina@hey.com</a></li>
+        </ul>
+    </footer>
         
     </body>
 </html>

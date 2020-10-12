@@ -1,0 +1,145 @@
+/* global */
+
+body{
+    box-sizing: border-box; 
+    font-family: 'Courier Prime', monospace;
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+    color: #555B82;
+    background-color: #DFE1F0;
+}
+
+/* text styling */
+a {
+    color: #555B82;
+}
+
+a:hover{
+    font-weight: 700;
+}
+
+a:visited{
+    color: #745582;
+}
+
+a:active{
+    color: #404355;
+}
+
+p{
+    line-height: 1.4em;
+}
+
+ul{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+/* containers */
+#intro, #about-me, #contact, #projects{
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.project img{
+    width: 100%;
+}
+
+
+/*--------- Mobile ----------*/
+
+/* mobile header */
+.logo{
+    font-size: 1.5em;
+    margin-top: 11px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ol{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ol li{
+    margin: 10px 0;
+}
+
+.hero-section{
+    margin: 50px 20px;
+}
+
+
+/* horizontal rules */
+
+hr {
+    height: 11px;
+    background-image: url(../images/divider.png);
+    border: 0;
+    width: 90%;
+    max-width: 800px;
+}
+
+
+/* lists */
+
+ul li{
+    margin: 20px 0;
+}
+
+/* projects */
+.project{
+    margin: 20px 0;
+}
+
+
+
+
+/*--------- Desktop ---------*/
+
+@media all and (min-width: 800px) {
+    .flex-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ol{ 
+        flex-direction: row;
+    }
+
+    nav ol li{
+        margin: 0 0 0 70px;
+    }
+
+    .hero-section{
+        margin: 100px 20px;
+    }
+
+    /* about me */
+    .right-about{
+        margin-left: 20px;
+    }
+
+    /* Projects */
+
+    .project{
+        margin: 0 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

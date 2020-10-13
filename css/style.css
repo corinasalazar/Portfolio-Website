@@ -63,22 +63,22 @@ ul{
     flex-direction: column;
 }
 
-header nav ul{
+ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-header nav ul li{
+ul li{
     margin: 10px 0;
     list-style: none;
 }
 
-header nav ul li a{
+ul li a{
     margin-right: 30px;
 }
 
-header nav ul li:last-child a{
+ul li:last-child a{
     margin-right: 0;
 }
 
@@ -109,7 +109,38 @@ ul li{
     margin: 20px 0;
 }
 
+/* forms */
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea{
+    margin-bottom: 20px;
+    border: 1px solid #bbbed8;
+}
+
+form input{
+    height: 30px;
+}
+
+form textarea{
+    min-height: 100px;
+}
+
+form button{
+    background-color:#555B82;
+    padding: 12px;
+    border: 0px solid #555B82;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*--------- Desktop ---------*/
@@ -146,6 +177,26 @@ ul li{
     .project{
         margin: 0 20px;
     }
+
+    /* forms */
+
+    form{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+    }
+
+
 }
 
 

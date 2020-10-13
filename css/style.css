@@ -55,6 +55,7 @@ ul{
 .logo{
     font-size: 1.5em;
     margin-top: 11px;
+    text-align: center;
 }
 
 .flex-container{
@@ -62,13 +63,23 @@ ul{
     flex-direction: column;
 }
 
-nav ol{
+header nav ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
 
-nav ol li{
+header nav ul li{
     margin: 10px 0;
+    list-style: none;
+}
+
+header nav ul li a{
+    margin-right: 30px;
+}
+
+header nav ul li:last-child a{
+    margin-right: 0;
 }
 
 .hero-section{
@@ -104,6 +115,10 @@ ul li{
 /*--------- Desktop ---------*/
 
 @media all and (min-width: 800px) {
+    .logo{
+        margin-top: 20px;
+    }
+    
     .flex-container{
         flex-direction: row;
         justify-content: space-between;
@@ -131,16 +146,6 @@ ul li{
     .project{
         margin: 0 20px;
     }
-/*
-
-
-
-#about-me{
-    padding-bottom: 480px;
-}
-
-#contact{
-    padding-bottom: 40px;
 }
 
 
@@ -150,21 +155,6 @@ ul li{
 
 
 
-/* about section */
-/*
-.left-about{
-    width: 15%;
-    float: left;
-}
 
-.right-about{
-    width: 80%;
-    float: left;
-    margin-left: 5%;
-}
-
-img{
-    margin-top: 20px;
-}
 
 
